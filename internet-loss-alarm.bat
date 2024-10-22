@@ -1,0 +1,1 @@
+python .\path\to\internet-loss-alarm\main.py
