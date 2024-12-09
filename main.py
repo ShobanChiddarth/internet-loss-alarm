@@ -11,7 +11,7 @@ while True:
         if connected is False:
             print("Internet is back")
         connected = True
-    except requests.exceptions.ConnectionError:
+    except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout):
         if connected is not False:
             playsound("./beep.mp3")
             print("Internet lost")
